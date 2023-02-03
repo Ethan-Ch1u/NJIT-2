@@ -34,6 +34,11 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
+	document.getElementById('photo').src = mImages[mCurrentIndex].img;
+	var location = document.getElementById('location');
+	location[0].innerHTML = 'location: ' = mImages[mCurrentIndex].location;
+	var description = document.getElementById('description');
+	var date = document.getElementById('date');
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -56,6 +61,15 @@ var mJson;
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = 'images.json'; 
 
+function fetchJSON(){
+	mRequest.onreadystatechange = function (){
+		if(this.readyState == 4 && this.status == 200){
+			responseText = JSON.parse(this.responseText);
+		}
+	}
+	mRequest.open("Get", mUrl, true);
+	mRequest.send();
+}
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
