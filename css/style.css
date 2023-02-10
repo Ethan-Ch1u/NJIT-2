@@ -36,7 +36,9 @@ body {
 .thumbnail {
 	position: relative;
 	box-shadow: 1px 3px 20px 0px;
+	max-width: 100%;
 }
+
 
 
 .banner {
@@ -54,9 +56,16 @@ body {
 	width: 42px;
 }
 
+#prevPhoto:hover {
+	opacity: 0.8;
+}
+
 #nextPhoto {
 	height: 42px;
 	width: 42px;
+}
+#nextPhoto:hover {
+	opacity: 0.8;
 }
 
 .details p {
@@ -68,14 +77,34 @@ body {
 	margin: 20px 0px;
 }
 
-/*Add CSS styles to rotate the element 90deg
+
+
+/*Add CSS styles to rotate the img element 90deg
 Make it animate nicely. You'll need CSS3 for this*/
-.rot90 {}
+
+
+.rot90 {
+	position: absolute;
+	top: 80%;
+	right: 44%;
+	rotate: 90deg;
+	transition: all 1s ease;
+}
+
+
 
 /*Add CSS styles to rotate the element 180deg
 Make it animate nicely. You'll need CSS3 for this*/
-.rot180 {}
+.rot180 {
+	rotate: 180deg;
+}
 
 /*Add CSS styles to rotate the element 270deg
 Make it animate nicely. You'll need CSS3 for this*/
-.rot270 {}
+.rot270 {
+	position: absolute;
+		top: 80%;
+		right: 44%;
+		rotate: 270deg;
+		transition: all 1s ease;
+}
