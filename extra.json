@@ -1,34 +1,34 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
+            "imgPath": "img/extraPics/41npPjOi8kL.jpg",
+            "imgLocation": "Nintendo Wii",
+            "description": "Wii is a home console from Nintend",
+            "date": "November 18, 2012"
         },
         {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
+            "imgPath": "img/extraPics/41YPA6uIBAL._AC_UF1000,1000_QL80_.jpg",
+            "imgLocation": "Nintendo 3DS",
+            "description": "The Nintendo 3DS is a handheld game console produced by Nintendo",
+            "date": " February 26, 2011"
         },
         {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
+            "imgPath": "img/extraPics/ElNxVpLPiAdTMYYi.jpg",
+            "imgLocation": "Xbox 360",
+            "description": "The Xbox 360 is a home video game console developed by Microsoft.",
+            "date": "November 22, 2005"
         },
         {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
+            "imgPath": "img/extraPics/jbareham_201020_ecl1040_xbox_lead_0001.jpg",
+            "imgLocation": "Xbox Series X",
+            "description": "The Xbox Series X delivers sensationally smooth frame rates of up to 120FPS with the visual pop of HDR.",
+            "date": "November 10, 2020"
         },
         {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
+            "imgPath": "img/extraPics/Nintendo-Switch-OLED.jpg",
+            "imgLocation": "Nintendo Switch",
+            "description": "The Nintendo Switch is a hybrid video game console, consisting of a console unit, a dock, and two Joy-Con controller",
+            "date": "March 3, 2017"
         }
   ]
 }

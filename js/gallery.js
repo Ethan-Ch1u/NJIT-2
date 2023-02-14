@@ -83,6 +83,7 @@ var mUrl = 'images.json';
 
 
 
+
 function fetchJSON(){
 	mRequest.onreadystatechange = function (){
 		if(this.readyState == 4 && this.status == 200){
@@ -95,7 +96,7 @@ function fetchJSON(){
 	
 }
 
-function iterateJSON(){
+function iterateJSON(mJson){
 	//for loop that access the mImages array by using the variable x as the index
 	
 	for (x = 0; x < mJson.images.length; x++) {
@@ -116,7 +117,16 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 	}
 }
 
+//GET handler that accepts a variable called “json” that allows a user to point to an alternate JSON file. If the alternate JSON file is valid, use that file as the gallery’s input. If there is no json file provided, or the provided JSON file is invalid, use the default images.json file.
 $(document).ready( function() {
+
+	let x = "extra.json";
+
+	$.get("extra.json", function(data){
+		iterateJSON(data);
+	}).fail(function(){
+		fetchJSON();
+	})
 
 		//offset the #nextPhoto image so that it is flush with the right side of the #nav div
 
@@ -127,7 +137,7 @@ $(document).ready( function() {
 	});
 	// This initially hides the photos' metadata information
 	//$('.details').eq(0).hide();
-	fetchJSON();
+	//fetchJSON();
 	//Add a click handler to the img.moreIndicator that Add a class attribute value = “rot270” if the element currently has a class value with “rot90”; else remove the “rot270” class and add “rot90”, causing the arrow to animate upside down.
 
 	$( ".moreIndicator" ).click(function() {

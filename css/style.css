@@ -1,7 +1,7 @@
 body {
+	background-image: url("../img/background.jpg");
 	overflow: auto;
 	font-family: 'Century Gothic', sans-serif;
-	background-image: url(../img/geometry.jpg);
 }
 
 #photoBooth {
@@ -16,6 +16,7 @@ body {
 
 #slideShow {	
 	position: relative;
+	
 }
 
 .photoHolder {
@@ -37,6 +38,7 @@ body {
 	position: relative;
 	box-shadow: 1px 3px 20px 0px;
 	max-width: 100%;
+	background-image: url("../img/download.jpg");
 }
 
 
